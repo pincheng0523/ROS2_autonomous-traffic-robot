@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <world name="mission_world">
+
+    <!-- 地面 -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- 光源 -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- ========================= -->
+    <!-- 起點：機器人實際 spawn 點 -->
+    <!-- 機器人面朝 +X 方向 -->
+    <!-- ========================= -->
+    <model name="start_marker">
+      <static>true</static>
+      <pose>0 0 0.01 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.8 0.8 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0 0 1 1</ambient>
+            <diffuse>0 0 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <include>
+      <uri>model://maze</uri>
+      <pose>3.44 1.62 0 0 0 -1.570</pose>
+    </include>
+
+    <include>
+      <uri>model://stop</uri>
+      <pose>-0.368 -0.938 0 0 0 -1.570</pose>
+    </include>
+
+    <include>
+      <uri>model://slow</uri>
+      <pose>3.97702 6.032828 0 0 0 1.570</pose>
+    </include>
+
+    <include>
+      <uri>model://100</uri>
+      <pose>0.929343 3.151955 0 0 0 -3.14</pose>
+    </include>
+
+    <include>
+      <uri>model://green</uri>
+      <pose>2.227261 2.187486 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://yellow</uri>
+      <pose>3.679186 4.507156 0 0 0 -1.57</pose>
+    </include>
+
+
+
+  </world>
+</sdf>

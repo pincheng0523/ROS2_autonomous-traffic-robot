@@ -1,0 +1,15 @@
+material Sign/Stop
+{
+  technique
+  {
+    pass
+    {
+      lighting off
+      texture_unit
+      {
+        texture Stop.png
+        scale 1 1
+      }
+    }
+  }
+}

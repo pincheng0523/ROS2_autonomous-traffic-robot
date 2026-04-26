@@ -1,0 +1,16 @@
+material Sign/100
+{
+  technique
+  {
+    pass
+    {
+      lighting off
+
+      texture_unit
+      {
+        texture 100.png
+        scale 1 1
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <model name="slow">
+    <static>true</static>
+
+
+    <!-- 牌面 -->
+    <link name="link">
+
+	  <!-- ===================== -->
+	  <!-- 黑色底板 -->
+	  <!-- ===================== -->
+	  <visual name="board_base">
+		<pose>0 0 0.55 0 0 0</pose>
+		<geometry>
+		  <box>
+		    <size>0.55 0.02 0.45</size> <!-- 厚度稍微有 -->
+		  </box>
+		</geometry>
+		<material>
+		  <ambient>0 0 0 1</ambient>
+		  <diffuse>0 0 0 1</diffuse>
+		</material>
+	  </visual>
+
+	  <!-- ===================== -->
+	  <!-- 貼圖板（前面那層） -->
+	  <!-- ===================== -->
+	  <visual name="board_texture">
+		<!-- y +0.011 → 往外一點 -->
+		<pose>0 0.011 0.55 0 0 0</pose>
+
+		<geometry>
+		  <box>
+		    <size>0.55 0.001 0.45</size> <!-- 很薄 -->
+		  </box>
+		</geometry>
+
+		<material>
+		  <script>
+		    <uri>model://slow/materials/scripts</uri>
+		    <uri>model://slow/materials/textures</uri>
+		    <name>Sign/slow</name>
+		  </script>
+		</material>
+	  </visual>
+
+      <!-- 偏右支柱 -->
+      <collision name="pole_collision">
+        <pose>0.3 0 0.22 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.06 0.05 0.44</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <visual name="pole_visual">
+        <pose>0.3 0 0.22 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.06 0.05 1.15</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.3 0.3 0.3 1</ambient>
+          <diffuse>0.3 0.3 0.3 1</diffuse>
+        </material>
+      </visual>
+
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,16 @@
+material Sign/green
+{
+  technique
+  {
+    pass
+    {
+      lighting off
+
+      texture_unit
+      {
+        texture green.png
+        scale 1 1
+      }
+    }
+  }
+}

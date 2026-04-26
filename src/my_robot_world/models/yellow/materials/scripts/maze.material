@@ -1,0 +1,16 @@
+material Sign/yellow
+{
+  technique
+  {
+    pass
+    {
+      lighting off
+
+      texture_unit
+      {
+        texture yellow.png
+        scale 1 1
+      }
+    }
+  }
+}

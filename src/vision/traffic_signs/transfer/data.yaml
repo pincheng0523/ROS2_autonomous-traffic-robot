@@ -1,0 +1,11 @@
+path: /home/cpc/turtlebot_project_ws/src/vision/dataset/traffic_light/signs/transfer
+train: images/train
+val: images/val
+
+names:
+  0: crosswalk
+  1: speedlimit
+  2: stop
+  3: trafficlight
+  4: turn_left
+  5: turn_right
