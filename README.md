@@ -19,16 +19,16 @@ The robot uses deep learning-based computer vision models to detect traffic sign
 ## Key Features
 
 - Real-time traffic sign detection using YOLOv8  
-- Traffic light state classification using EfficientNet  
-- Behavior decision logic for autonomous robot response  
-- Integrated ROS2 node communication pipeline  
-- Full Gazebo simulation testing environment  
-
-- 使用 YOLOv8 進行即時交通標誌偵測  
-- 使用 EfficientNet 進行紅綠燈分類  
-- 建立自動決策邏輯控制機器人行為  
-- 完整 ROS2 節點通訊流程整合  
-- 可於 Gazebo 模擬環境完整測試  
+  使用 YOLOv8 進行即時交通標誌偵測 
+- Traffic light state classification using EfficientNet
+  使用 EfficientNet 進行紅綠燈分類  
+- Behavior decision logic for autonomous robot response
+  建立自動決策邏輯控制機器人行為  
+- Integrated ROS2 node communication pipeline
+  完整 ROS2 節點通訊流程整合 
+- Full Gazebo simulation testing environment
+  可於 Gazebo 模擬環境完整測試
+    
 
 ---
 
@@ -36,17 +36,16 @@ The robot uses deep learning-based computer vision models to detect traffic sign
 
 ### Perception and Control Pipeline
 
-1. Subscribe to TurtleBot3 camera image stream  
-2. Perform traffic sign detection using YOLOv8  
-3. Perform traffic light classification using EfficientNet  
-4. Fuse perception results into decision-making logic  
-5. Publish velocity commands to `/cmd_vel`  
-
-1. 訂閱 TurtleBot3 相機影像串流  
-2. 使用 YOLOv8 偵測交通標誌  
-3. 使用 EfficientNet 分類紅綠燈狀態  
-4. 將感知結果整合進決策邏輯  
-5. 發布速度控制至 `/cmd_vel`  
+1. Subscribe to TurtleBot3 camera image stream
+   訂閱 TurtleBot3 相機影像串流  
+2. Perform traffic sign detection using YOLOv8
+   使用 YOLOv8 偵測交通標誌  
+3. Perform traffic light classification using EfficientNet
+   使用 EfficientNet 分類紅綠燈狀態  
+4. Fuse perception results into decision-making logic
+   將感知結果整合進決策邏輯  
+5. Publish velocity commands to `/cmd_vel`
+   發布速度控制至 `/cmd_vel`  
 
 ---
 
@@ -137,15 +136,14 @@ Confidence thresholding and temporal filtering were introduced to stabilize deci
 
 ## Future Improvements
 
-- Integrate SLAM for environment mapping  
-- Add Nav2 for autonomous path planning  
-- Deploy to real TurtleBot3 hardware  
-- Explore sim-to-real transfer optimization  
-
-- 整合 SLAM 建立環境地圖  
-- 加入 Nav2 完成自主路徑規劃  
-- 部署至實體 TurtleBot3  
-- 研究 Sim-to-Real Transfer 優化  
+- Integrate SLAM for environment mapping
+- 整合 SLAM 建立環境地圖 
+- Add Nav2 for autonomous path planning
+- 加入 Nav2 完成自主路徑規劃
+- Deploy to real TurtleBot3 hardware
+- 部署至實體 TurtleBot3 
+- Explore sim-to-real transfer optimization
+- 研究 Sim-to-Real Transfer 優化 
 
 ---
 
