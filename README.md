@@ -42,14 +42,19 @@ The robot uses deep learning-based computer vision models to detect traffic sign
 ### Perception and Control Pipeline
 
 1. Subscribe to TurtleBot3 camera image stream
+
    訂閱 TurtleBot3 相機影像串流  
 2. Perform traffic sign detection using YOLOv8
+
    使用 YOLOv8 偵測交通標誌  
 3. Perform traffic light classification using EfficientNet
+
    使用 EfficientNet 分類紅綠燈狀態  
 4. Fuse perception results into decision-making logic
+  
    將感知結果整合進決策邏輯  
 5. Publish velocity commands to `/cmd_vel`
+
    發布速度控制至 `/cmd_vel`  
 
 ---
@@ -130,10 +135,13 @@ Confidence thresholding and temporal filtering were introduced to stabilize deci
 ## Demonstration Results
 
 - Successfully performs real-time traffic perception in Gazebo simulation
+
   成功於 Gazebo 中即時完成交通感知
 - Robot executes correct driving behavior according to detected traffic conditions
+
   機器人可依辨識結果執行正確控制行為   
 - Achieves stable perception-to-control closed-loop integration
+
   完成穩定的 perception-to-control 閉環系統整合 
 
 ---
@@ -141,12 +149,16 @@ Confidence thresholding and temporal filtering were introduced to stabilize deci
 ## Future Improvements
 
 - Integrate SLAM for environment mapping
+
   整合 SLAM 建立環境地圖 
 - Add Nav2 for autonomous path planning
+
   加入 Nav2 完成自主路徑規劃
 - Deploy to real TurtleBot3 hardware
+
   部署至實體 TurtleBot3 
 - Explore sim-to-real transfer optimization
+
   研究 Sim-to-Real Transfer 優化 
 
 ---
