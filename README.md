@@ -18,15 +18,20 @@ The robot uses deep learning-based computer vision models to detect traffic sign
 
 ## Key Features
 
-- Real-time traffic sign detection using YOLOv8  
+- Real-time traffic sign detection using YOLOv8
+  
   使用 YOLOv8 進行即時交通標誌偵測 
 - Traffic light state classification using EfficientNet
+
   使用 EfficientNet 進行紅綠燈分類  
 - Behavior decision logic for autonomous robot response
+
   建立自動決策邏輯控制機器人行為  
 - Integrated ROS2 node communication pipeline
+
   完整 ROS2 節點通訊流程整合 
 - Full Gazebo simulation testing environment
+
   可於 Gazebo 模擬環境完整測試
     
 
