@@ -124,13 +124,12 @@ Confidence thresholding and temporal filtering were introduced to stabilize deci
 
 ## Demonstration Results
 
-- Successfully performs real-time traffic perception in Gazebo simulation  
-- Robot executes correct driving behavior according to detected traffic conditions  
-- Achieves stable perception-to-control closed-loop integration  
-
-- 成功於 Gazebo 中即時完成交通感知  
-- 機器人可依辨識結果執行正確控制行為  
-- 完成穩定的 perception-to-control 閉環系統整合  
+- Successfully performs real-time traffic perception in Gazebo simulation
+- 成功於 Gazebo 中即時完成交通感知
+- Robot executes correct driving behavior according to detected traffic conditions
+- 機器人可依辨識結果執行正確控制行為   
+- Achieves stable perception-to-control closed-loop integration
+- 完成穩定的 perception-to-control 閉環系統整合 
 
 ---
 
