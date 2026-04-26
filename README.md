@@ -125,24 +125,24 @@ Confidence thresholding and temporal filtering were introduced to stabilize deci
 ## Demonstration Results
 
 - Successfully performs real-time traffic perception in Gazebo simulation
-- 成功於 Gazebo 中即時完成交通感知
+  成功於 Gazebo 中即時完成交通感知
 - Robot executes correct driving behavior according to detected traffic conditions
-- 機器人可依辨識結果執行正確控制行為   
+  機器人可依辨識結果執行正確控制行為   
 - Achieves stable perception-to-control closed-loop integration
-- 完成穩定的 perception-to-control 閉環系統整合 
+  完成穩定的 perception-to-control 閉環系統整合 
 
 ---
 
 ## Future Improvements
 
 - Integrate SLAM for environment mapping
-- 整合 SLAM 建立環境地圖 
+  整合 SLAM 建立環境地圖 
 - Add Nav2 for autonomous path planning
-- 加入 Nav2 完成自主路徑規劃
+  加入 Nav2 完成自主路徑規劃
 - Deploy to real TurtleBot3 hardware
-- 部署至實體 TurtleBot3 
+  部署至實體 TurtleBot3 
 - Explore sim-to-real transfer optimization
-- 研究 Sim-to-Real Transfer 優化 
+  研究 Sim-to-Real Transfer 優化 
 
 ---
 
